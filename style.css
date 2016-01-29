@@ -1,0 +1,29 @@
+body {
+  margin: 2em;
+  font: .8em/1.5 -apple-system, helvetica, sans-serif;
+}
+h1 {
+  color: rgb(80,180,40);
+}
+h1.failed {
+  color: rgb(255,70,60);
+}
+h1 + h2 {
+  padding-top: 1em;
+  border-top: 1px solid #ddd;
+}
+ul {
+  list-style: none;
+}
+li::before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(80,180,40);
+}
+li.failed::before {
+  background: rgb(255,70,60);
+}
